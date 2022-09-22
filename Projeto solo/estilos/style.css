@@ -42,10 +42,16 @@ section#login {
 }
 
 section#login > div#imagem {
+    display: block;
     background-color: #5f2c82;
     background-image: url(../imagens/construcao.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 30%;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
 }
