@@ -55,3 +55,31 @@ section#login > div#formulario {
     display: block;
     padding: 10px;
 }
+
+h1 {
+    text-align: center;
+}
+
+section#login > div#formulario > p {
+    font-weight: 500;
+}
+
+
+/* Formulário */
+
+span#boneco {
+    background-color: #5f2c82;
+    font-size: 1.4em;
+    float: left;
+    padding-top: 5px;
+    height: 30px;
+    margin-right: 0px;
+}
+
+input#ilogin {
+    width: 90%;
+    height: 30px;
+    float: right;
+    margin-left: 0px;
+    border: 1px solid #5f2c82;
+}
