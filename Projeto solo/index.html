@@ -19,25 +19,34 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <p><label for="ilogin">
-                        <span class="material-symbols-outlined" id="boneco">
-                            person
-                        </span>
-                        </label><input type="text" name="login" id="ilogin" minlength="6" maxlength="27" placeholder="seu e-mail" required autocomplete="username"></p>
-                    <p><label for="isenha">
-                        <span class="material-symbols-outlined" id="chave">
-                            vpn_key
-                        </span>
-                    </label><input type="password" name="senha" id="isenha" required minlength="6" maxlength="10" placeholder="sua senha" autocomplete="current-password"></p>
+                    <div class="ususen" style="clear: both;">
+                            <label for="ilogin" id="boneco" class="icones">
+                                <span class="material-symbols-outlined icone">
+                                    person
+                                </span>
+                            </label>
+                            <input type="text" name="login" id="ilogin" minlength="6" maxlength="27" placeholder="seu e-mail" required autocomplete="username" class="input input1">
+                    </div>
+                    <div class="ususen">
+                        <p><label for="isenha" id="chave" class="icones">
+                                <span class="material-symbols-outlined icone" id="chave">
+                                    vpn_key
+                                </span>
+                            </label>
+                            <input type="password" name="senha" id="isenha" required minlength="6" maxlength="10" placeholder="sua senha" autocomplete="current-password" class="input input2">
+                        </p>
+                    </div>
                     <p>
-                        <input type="submit" value="Enviar">
+                        <input type="submit" value="Enviar" id="enviar">
                     </p>
                 </form>
-                <p>Esqueci a senha 
-                    <span class="material-symbols-outlined">
-                        mail
-                    </span>
-                </p>
+                <div style="clear: both;">
+                    <p id="esqsenha">Esqueci a senha
+                        <span class="material-symbols-outlined" id="carta">
+                            mail
+                        </span>
+                    </p>
+                </div>
             </div>
         </section>
     </main>
