@@ -15,3 +15,77 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #472B76;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.formato {
+    width: 250px;
+    height: 540px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+section.imagem {
+    width: 100%;
+    height: 40%;
+    background-color: #472B76;
+    background-image: url(../imagens/predio1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    
+}
+
+section.login {
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+}
+
+section.login > h1 {
+    text-align: center;
+    font-size: 1.6em;
+    padding: 5px; 
+}
+
+section.login > p {
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+div.card-login {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+div.base-inputs {
+    width: 100%;
+    height: 40px;
+    background-color: #AE8033;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+
+
+div.base-inputs > label {
+    display: none;
+}
