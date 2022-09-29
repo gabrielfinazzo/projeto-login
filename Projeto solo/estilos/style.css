@@ -38,6 +38,9 @@ div.formato {
     flex-direction: column;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.534);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section.imagem {
@@ -65,7 +68,7 @@ section.login > h1 {
 
 section.login > p {
     font-weight: 600;
-    font-size: 2vw;
+    font-size: 0.8em;
 }
 
 div.card-login {
@@ -74,18 +77,82 @@ div.card-login {
     margin-top: 10px;
 }
 
+form {
+    width: 100%;
+}
+
 div.base-inputs {
+    display: block;
     width: 100%;
     height: 40px;
     background-color: #AE8033;
-    margin-bottom: 10px;
-    padding: 5px;
+    margin: 5px 0px;
     border-radius: 8px;
+    border: 2px solid #AE8033;
+    overflow: hidden;
+}
+
+div.base-inputs > span {
+    width: 30px;
+    color: #472B76;
+    font-size: 2em;
+    padding: 0px 5px;
 }
 
 
+div.base-inputs > input {
+    width: calc(100% - 45px);
+    height: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: 0px;
+    transform: translate(6%, -30%);
+    background-color: #D1A55A;
+}
 
+div.base-inputs > input::placeholder {
+    color: white;
+}
+
+div.base-inputs > input:focus-within {
+    background-color: white;
+}
 
 div.base-inputs > label {
     display: none;
+}
+
+input#submit {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #895E14;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+a.botao-esqueci {
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #895E14;
+    border-radius: 8px;
+    margin: 5px 0;
+    color: #895E14;
+    font-size: 1em;
+    padding: 10px;
+}
+
+a.botao-esqueci:hover {
+    background-color: #D1A55A;
+}
+
+a.botao-esqueci > span {
+    font-size: 0.8em;
 }
